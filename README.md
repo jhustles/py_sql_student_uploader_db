@@ -25,33 +25,33 @@ Libraries / Packages
 
 Notes: import.py
 
-    The rogram accepts the name of a CSV file as a command-line argument.
+The rogram accepts the name of a CSV file as a command-line argument.
 
-    If the incorrect number of command-line arguments are provided, the program will print an error and exit.
+If the incorrect number of command-line arguments are provided, the program will print an error and exit.
 
-    The CSV file will exist, and will have columns name, house, and birth. For each student in the CSV file, I inserted the student into the students table in the students.db database.
+The CSV file will exist, and will have columns name, house, and birth. For each student in the CSV file, I inserted the student into the students table in the students.db database.
 
-    The database have separate columns for first, middle, and last names.
+The database have separate columns for first, middle, and last names.
 
-    I first parse each name and separate it into first, middle, and last names.
+I first parse each name and separate it into first, middle, and last names.
 
-    Assumptions: each person’s name field will contain either two space-separated names (a first and last name) or three space-separated names (a first, middle, and last name).
+Assumptions: each person’s name field will contain either two space-separated names (a first and last name) or three space-separated names (a first, middle, and last name).
 
-    Students without a middle nam will be NULL in the table.
+Students without a middle nam will be NULL in the table.
 
-    ![1](./images/import.png)
+![1](./images/import.png)
 
 Notes: roster.py
 
-    This program accepts the name of a house as a command-line argument.
+This program accepts the name of a house as a command-line argument.
 
-    If the incorrect number of command-line arguments are provided, the program prints an error and exit.
+If the incorrect number of command-line arguments are provided, the program prints an error and exit.
 
-    The program will query the students table in the students.db database for all of the students in the specified house. It will then print out each student’s full name and birth year (formatted as, e.g., Harry James Potter, born 1980 or Luna Lovegood, born 1981).
+The program will query the students table in the students.db database for all of the students in the specified house. It will then print out each student’s full name and birth year (formatted as, e.g., Harry James Potter, born 1980 or Luna Lovegood, born 1981).
 
-    Students results are ordered by last name. For students with the same last name, will be ordered by first name.
+Students results are ordered by last name. For students with the same last name, will be ordered by first name.
 
-    ![2](./images/roster.png)
+![2](./images/roster.png)
 
 ### Personal Note
 
